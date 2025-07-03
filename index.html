@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Agro</title>
+    <link rel="stylesheet" href="14-catatanAgro.css">
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link   
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+    />    
+</head>
+<body>
+    <h1>Catatan Agro</h1>
+    <main>
+        <header>
+            <button id="add-btn">
+                <i class="fa-solid fa-notes-medical"> Tambah Catatan</i>
+            </button>
+            <div class="save-file">
+                <div class="button-container">
+                    <button id="exportBtn" title="SAVE DATA">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                    <button id="importBtn" title="UPLOAD DATA">
+                        <i class="fa-solid fa-upload"></i>
+                    </button>
+                    <button id="deleteBtn" title="HAPUS LOCALSTORAGE">
+                        <i class="fa-solid fa-eraser"></i>
+                    </button>
+                </div>
+                <input type="file" id="fileInput">
+            </div>
+        </header>
+        <form action="#" id="form-catatan">
+            <div class="close-container">
+                <button class="tutup-form" id="tutup-form">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="body-form">
+                <label for="judul-input">Judul:
+                    <input type="text" id="judul-input" name="judul"/>
+                </label>
+                <label for="tanggal-input">Tanggal:
+                    <input type="date" id="tanggal-input" name="tanggal"/>
+                </label>
+                <label for="deskripsi-input">Deskripsi:
+                    <textarea name="deskripsi" id="deskripsi-input" spellcheck="false"></textarea>
+                </label>
+                <button type="button" id="btn-tambah" class="btn-tambah">TAMBAH CATATAN</button>
+            </div>
+        </form>
+        <div class="content-container"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="14-catatanAgro.js"></script>
+</body>
+</html>
