@@ -169,8 +169,8 @@ form .btn-tambah{
 }
 .catatan img{
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     margin: 10px auto;
     border-radius: 10px;
